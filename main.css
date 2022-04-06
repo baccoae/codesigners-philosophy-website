@@ -32,9 +32,10 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #1e1f24;
+  border: 1px #1e1f24 solid;
 }
 .section span {
   color: #8337ff;
   font-family: "Fungis Heavy";
-  font-size: 5em;
+  font-size: 10em;
 }
