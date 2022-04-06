@@ -1,43 +1,76 @@
-body {
+@font-face {
+    font-family: Fungis Regular;
+    src: url("./fonts/FUNGIS/FUNGIS\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Fungis Bold;
+    src: url("./fonts/FUNGIS/FUNGIS\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Fungis Heavy;
+    src: url("./fonts/FUNGIS/FUNGIS\ Heavy.ttf") format("truetype");
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
+body {
+    overscroll-behavior: none;
+    height: 100vh;
+}
+
 main {
+    overscroll-behavior: none;
+    width: 600%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    overflow: scroll;
+    flex-wrap: nowrap;
 }
 
 .section {
-    flex-shrink: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1e1f24;
+
+    & span {
+        color: #8337ff;
+        font-family: "Fungis Heavy";
+        font-size: 5em;
+    }
 }
 
-.one {
-    background-color: #8337ff;
-}
+// .one {
+//     background-color: #8337ff;
+// }
 
-.two {
-    background-color: #8337ff;
-    filter: brightness(0.9);
-}
+// .two {
+//     background-color: #8337ff;
+//     filter: brightness(0.9);
+// }
 
-.three {
-    background-color: #8337ff;
-    filter: brightness(0.8);
-}
+// .three {
+//     background-color: #8337ff;
+//     filter: brightness(0.8);
+// }
 
-.four {
-    background-color: #8337ff;
-    filter: brightness(0.7);
-}
+// .four {
+//     background-color: #8337ff;
+//     filter: brightness(0.7);
+// }
 
-.five {
-    background-color: #8337ff;
-    filter: brightness(0.6);
-}
+// .five {
+//     background-color: #8337ff;
+//     filter: brightness(0.6);
+// }
+
+// .six {
+//     background-color: #8337ff;
+//     filter: brightness(0.5);
+// }
