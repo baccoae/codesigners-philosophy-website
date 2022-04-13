@@ -1,3 +1,9 @@
+// VARIABLES ==============================================
+@black: #1a1b1f;
+@purple-primary: #8337ff;
+
+// FONTS ==================================================
+
 @font-face {
     font-family: Fungis Regular;
     src: url("./fonts/FUNGIS/FUNGIS\ Regular.ttf") format("truetype");
@@ -23,9 +29,61 @@ body {
     height: 100vh;
 }
 
+nav {
+    position: fixed;
+    // top: 0;
+    left: 30px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 90vh;
+    align-self: center;
+    background-color: rgb(174, 209, 209);
+
+    & .burger-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        height: 60px;
+
+        &-bar {
+            width: 50%;
+            height: 2px;
+            background-color: white;
+        }
+    }
+
+    & .nav-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+
+        & a {
+            flex-shrink: 0;
+            font-family: Fungis Regular;
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+            transform: rotate(-90deg);
+        }
+    }
+
+    & .nav-author {
+        background-color: aqua;
+        display: flex;
+
+        &_dot {
+        }
+    }
+}
+
 main {
     overscroll-behavior: none;
-    width: 600%;
+    width: 700%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -37,13 +95,28 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1e1f24;
-    border: 1px #1e1f24 solid;
+    background-color: @black;
+    border: 1px @black solid;
 
     & span {
-        color: #8337ff;
+        color: @purple-primary;
         font-family: "Fungis Heavy";
         font-size: 10em;
+    }
+
+    & .test-btn {
+        color: white;
+        align-self: flex-end;
+        margin-bottom: 100px;
+        background-color: @purple-primary;
+        padding: 10px 40px;
+        transition: ease 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: ease 0.3s;
+        }
     }
 }
 
@@ -56,10 +129,10 @@ main {
 //     filter: brightness(0.9);
 // }
 
-// .three {
-//     background-color: #8337ff;
-//     filter: brightness(0.8);
-// }
+.three {
+    background-color: #ffffff;
+    filter: brightness(0.8);
+}
 
 // .four {
 //     background-color: #8337ff;

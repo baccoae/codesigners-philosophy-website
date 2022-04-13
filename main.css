@@ -18,9 +18,51 @@ body {
   overscroll-behavior: none;
   height: 100vh;
 }
+nav {
+  position: fixed;
+  left: 30px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 90vh;
+  align-self: center;
+  background-color: #aed1d1;
+}
+nav .burger-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 60px;
+}
+nav .burger-container-bar {
+  width: 50%;
+  height: 2px;
+  background-color: white;
+}
+nav .nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+nav .nav-title a {
+  flex-shrink: 0;
+  font-family: Fungis Regular;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  transform: rotate(-90deg);
+}
+nav .nav-author {
+  background-color: aqua;
+  display: flex;
+}
 main {
   overscroll-behavior: none;
-  width: 600%;
+  width: 700%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -31,11 +73,28 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1e1f24;
-  border: 1px #1e1f24 solid;
+  background-color: #1a1b1f;
+  border: 1px #1a1b1f solid;
 }
 .section span {
   color: #8337ff;
   font-family: "Fungis Heavy";
   font-size: 10em;
+}
+.section .test-btn {
+  color: white;
+  align-self: flex-end;
+  margin-bottom: 100px;
+  background-color: #8337ff;
+  padding: 10px 40px;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.section .test-btn:hover {
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+.three {
+  background-color: #ffffff;
+  filter: brightness(0.8);
 }
