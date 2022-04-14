@@ -23,11 +23,12 @@ nav {
   left: 30px;
   z-index: 999;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   width: 60px;
-  height: 90vh;
+  height: 92vh;
   align-self: center;
-  background-color: #aed1d1;
+  backdrop-filter: blur(10px);
 }
 nav .burger-container {
   display: flex;
@@ -36,6 +37,7 @@ nav .burger-container {
   justify-content: center;
   gap: 8px;
   height: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 nav .burger-container-bar {
   width: 50%;
@@ -46,7 +48,8 @@ nav .nav-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
+  height: 65%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 nav .nav-title a {
   flex-shrink: 0;
@@ -57,8 +60,25 @@ nav .nav-title a {
   transform: rotate(-90deg);
 }
 nav .nav-author {
-  background-color: aqua;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  height: 23%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+nav .nav-author_dot {
+  width: 6px;
+  height: 6px;
+  background-color: #8337ff;
+}
+nav .nav-author_text {
+  font-family: Fungis Regular;
+  font-size: 10px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  color: white;
 }
 main {
   overscroll-behavior: none;
