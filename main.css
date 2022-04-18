@@ -1,14 +1,18 @@
 @font-face {
-  font-family: Fungis Regular;
+  font-family: "Fungis Regular";
   src: url("./fonts/FUNGIS/FUNGIS\ Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: Fungis Bold;
+  font-family: "Fungis Bold";
   src: url("./fonts/FUNGIS/FUNGIS\ Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: Fungis Heavy;
+  font-family: "Fungis Heavy";
   src: url("./fonts/FUNGIS/FUNGIS\ Heavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Graffiti City";
+  src: url("./fonts/Graffiti-City/Graffiti\ City.otf") format("opentype");
 }
 * {
   margin: 0;
@@ -91,8 +95,6 @@ main {
   width: 100vw;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #1a1b1f;
   border: 1px #1a1b1f solid;
 }
@@ -113,6 +115,36 @@ main {
 .section .test-btn:hover {
   transform: scale(1.1);
   transition: ease 0.3s;
+}
+.hero-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 0 0 20%;
+}
+.hero-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero-title span {
+  font-size: 2.6em;
+  color: white;
+}
+.hero-title span.graffiti {
+  font-family: "Graffiti City";
+  color: #8337ff;
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 0.7em;
+}
+.hero-title .e-svg {
+  width: 490px;
+}
+.hero-statue {
+  position: absolute;
+  align-self: center;
+  bottom: -50px;
+  width: 44%;
 }
 .three {
   background-color: #ffffff;
