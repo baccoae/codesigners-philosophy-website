@@ -2,14 +2,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".section");
 
-gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".main",
-        pin: true,
-        scrub: 1,
-        end: "+=5500",
-    }
-});
+getTotalWidth = () => {
+    let width = 0;
+    sections.forEach(el => width += el.offsetWidth);
+    return width;
+},
 
+    gsap.to(sections, {
+        x: () => -getTotalWidth(),
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".main",
+            pin: true,
+            scrub: 1,
+            end: "+=5500",
+        }
+    });
