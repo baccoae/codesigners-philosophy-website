@@ -297,7 +297,7 @@ main {
   width: 700px;
   margin-right: -200px;
 }
-.sec-content-container {
+.sec3-content-container {
   width: 750px;
   display: flex;
   flex-direction: column;
@@ -307,7 +307,7 @@ main {
   position: relative;
   margin-top: 200px;
 }
-.sec-content-container .p1 {
+.sec3-content-container .p1 {
   width: 320px;
   text-align: center;
   font-size: 1.2em;
@@ -315,14 +315,14 @@ main {
   font-family: "Anonymous Regular";
   z-index: 2;
 }
-.sec-content-container .p2 {
+.sec3-content-container .p2 {
   width: 640px;
   text-align: center;
   font-size: 1.2em;
   font-family: "Anonymous Regular";
   z-index: 2;
 }
-.sec-content-container .p3 {
+.sec3-content-container .p3 {
   position: absolute;
   font-family: "Graffiti City";
   width: 500px;
@@ -343,14 +343,14 @@ main {
 .face-shape-outline {
   position: absolute;
   bottom: 0;
-  width: 500px;
+  width: 600px;
 }
 .ccontainer {
   display: flex;
   flex-direction: column;
   position: absolute;
   bottom: 50px;
-  left: 150px;
+  left: 180px;
 }
 .cspan-1 {
   font-family: "Fungis Heavy";
@@ -374,6 +374,26 @@ main {
   font-size: 3em;
   margin-top: -50px;
   z-index: 2;
+}
+.sec4-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  margin-left: 620px;
+  margin-top: 280px;
+}
+.sec4-content-container h2 {
+  font-family: "Fungis Heavy";
+  font-size: 5em;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.sec4-content-container .sec4-content {
+  font-family: "Anonymous Regular";
+}
+.face-transition-2 {
+  margin-left: -80px;
+  margin-right: -1px;
 }
 .four,
 .five,
