@@ -14,6 +14,14 @@
   font-family: "Graffiti City";
   src: url("./fonts/Graffiti-City/Graffiti\ City.otf") format("opentype");
 }
+@font-face {
+  font-family: "Anonymous Regular";
+  src: url("./fonts/Anonymous/AnonymousPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Anonymous Bold";
+  src: url("./fonts/Anonymous/AnonymousPro-Bold.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +29,8 @@
 body {
   overscroll-behavior: none;
   height: 100vh;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 nav {
   position: fixed;
@@ -32,9 +42,9 @@ nav {
   width: 60px;
   height: 92vh;
   align-self: center;
-  backdrop-filter: blur(10px);
 }
 nav .burger-container {
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,6 +59,7 @@ nav .burger-container-bar {
   background-color: white;
 }
 nav .nav-title {
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,6 +75,7 @@ nav .nav-title a {
   transform: rotate(-90deg);
 }
 nav .nav-author {
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,35 +98,23 @@ nav .nav-author_text {
 }
 main {
   overscroll-behavior: none;
-  width: 700%;
+  width: 703.7%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
+  background-color: #1a1b1f;
 }
 .section {
-  width: 100vw;
+  width: auto;
   height: 100%;
   display: flex;
+}
+.section.dark {
   background-color: #1a1b1f;
   border: 1px #1a1b1f solid;
 }
-.section span {
-  color: #8337ff;
-  font-family: "Fungis Heavy";
-  font-size: 10em;
-}
-.section .test-btn {
-  color: white;
-  align-self: flex-end;
-  margin-bottom: 100px;
-  background-color: #8337ff;
-  padding: 10px 40px;
-  transition: ease 0.3s;
-  cursor: pointer;
-}
-.section .test-btn:hover {
-  transform: scale(1.1);
-  transition: ease 0.3s;
+.one {
+  width: 100vw;
 }
 .hero-container {
   width: 60%;
@@ -127,6 +127,7 @@ main {
   text-align: center;
 }
 .hero-title span {
+  font-family: "Fungis Heavy";
   font-size: 2.6em;
   color: white;
 }
@@ -146,7 +147,110 @@ main {
   bottom: -50px;
   width: 44%;
 }
+.two {
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 12%;
+  margin-bottom: 40px;
+}
+.title.style1 {
+  text-transform: uppercase;
+}
+.title.style1 span {
+  color: #ffffff;
+  font-family: "Fungis Heavy";
+  font-size: 1.3em;
+  z-index: 2;
+}
+.title.style1 span.graffiti {
+  color: #8337ff;
+  font-family: "Graffiti City";
+  position: absolute;
+  font-size: 2.6em;
+  z-index: 1;
+  white-space: nowrap;
+}
+.catchphrase {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Fungis Heavy";
+  font-size: 4em;
+  margin-bottom: 40px;
+  position: relative;
+  white-space: nowrap;
+  z-index: 2;
+}
+.spray-sm-1 {
+  width: 200px;
+  position: absolute;
+  right: -100px;
+  top: 200px;
+  z-index: 1;
+}
+.table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.table-container-item {
+  display: flex;
+  flex-direction: column;
+}
+.table-container-item .item-title {
+  color: #ffffff;
+  font-family: "Anonymous Bold";
+}
+.table-container-item .item-list {
+  margin: 20px 0 0 28px;
+  color: #ffffff;
+  font-family: "Anonymous Regular";
+  list-style: none;
+  line-height: 1.3em;
+}
+.constellation-1 {
+  width: 200px;
+  position: absolute;
+  top: 50px;
+}
+.constellation-2 {
+  width: 245px;
+  position: absolute;
+  left: 387px;
+  top: 205px;
+}
+.constellation-3 {
+  width: 185px;
+  position: absolute;
+  left: 873px;
+  top: 25px;
+}
+.constellation-4 {
+  width: 200px;
+  position: absolute;
+  left: 1295px;
+  top: 500px;
+}
 .three {
-  background-color: #ffffff;
-  filter: brightness(0.8);
+  width: 100vw;
+}
+.section-nb {
+  font-family: "Fungis Heavy";
+  -webkit-text-stroke: #ffffff 1px;
+  font-size: 64em;
+  line-height: 0.9em;
+  color: #1a1b1f;
+}
+.four,
+.five,
+.six,
+.seven {
+  width: 100vw;
 }
