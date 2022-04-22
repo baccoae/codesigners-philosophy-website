@@ -57,6 +57,7 @@ nav .burger-container-bar {
   width: 50%;
   height: 2px;
   background-color: white;
+  mix-blend-mode: difference;
 }
 nav .nav-title {
   backdrop-filter: blur(10px);
@@ -73,6 +74,7 @@ nav .nav-title a {
   text-decoration: none;
   color: white;
   transform: rotate(-90deg);
+  mix-blend-mode: difference;
 }
 nav .nav-author {
   backdrop-filter: blur(10px);
@@ -95,6 +97,7 @@ nav .nav-author_text {
   transform: rotate(-90deg);
   flex-shrink: 0;
   color: white;
+  mix-blend-mode: difference;
 }
 main {
   overscroll-behavior: none;
