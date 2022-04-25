@@ -108,7 +108,6 @@ main {
   background-color: #1a1b1f;
 }
 .section {
-  width: auto;
   height: 100%;
   display: flex;
 }
@@ -119,14 +118,18 @@ main {
   background-color: #ffffff;
 }
 .one {
-  width: 110vw;
+  width: 100vw;
+  display: flex;
+  flex-shrink: 0;
   margin-right: 200px;
 }
 .hero-container {
-  width: 900px;
+  width: 60%;
   display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 3%;
   flex-direction: column;
-  padding: 3% 0 0 20%;
 }
 .hero-title {
   text-transform: uppercase;
@@ -151,7 +154,7 @@ main {
   position: absolute;
   align-self: center;
   bottom: -50px;
-  width: 54%;
+  width: 45%;
 }
 .two {
   flex-direction: column;

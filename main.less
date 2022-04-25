@@ -138,7 +138,6 @@ main {
 }
 
 .section {
-    width: auto;
     height: 100%;
     display: flex;
 
@@ -152,15 +151,19 @@ main {
 }
 
 .one {
-    width: 110vw;
+    width: 100vw;
+    display: flex;
+    flex-shrink: 0;
     margin-right: 200px;
 }
 
 .hero-container {
-    width: 900px;
+    width: 60%;
     display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 3%;
     flex-direction: column;
-    padding: 3% 0 0 20%;
 }
 
 .hero-title {
@@ -190,7 +193,7 @@ main {
     position: absolute;
     align-self: center;
     bottom: -50px;
-    width: 54%;
+    width: 45%;
 }
 
 .two {
@@ -544,18 +547,3 @@ main {
 .seven {
     width: 100vw;
 }
-
-// .four {
-//     background-color: #8337ff;
-//     filter: brightness(0.7);
-// }
-
-// .five {
-//     background-color: #8337ff;
-//     filter: brightness(0.6);
-// }
-
-// .six {
-//     background-color: #8337ff;
-//     filter: brightness(0.5);
-// }
