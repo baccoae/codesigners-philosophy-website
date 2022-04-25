@@ -190,7 +190,7 @@ main {
     position: absolute;
     align-self: center;
     bottom: -50px;
-    width: 44%;
+    width: 54%;
 }
 
 .two {
@@ -204,10 +204,10 @@ main {
     position: relative;
     display: flex;
     align-self: flex-start;
-    margin-top: 12%;
     margin-bottom: 40px;
 
     &.style1 {
+        margin-top: 12%;
         text-transform: uppercase;
         justify-content: center;
         align-items: center;
@@ -231,7 +231,7 @@ main {
     }
 
     &.style2 {
-        display: flex;
+        margin-top: 12%;
         flex-direction: column;
         color: #ffffff;
         position: relative;
@@ -250,6 +250,39 @@ main {
             text-transform: uppercase;
             font-size: 3em;
             width: 500px;
+        }
+    }
+
+    &.style3 {
+        flex-direction: column;
+        font-family: @fungisHeavy;
+        text-transform: uppercase;
+        font-size: 10em;
+        align-self: center;
+        gap: 20px;
+        background-color: @black;
+        z-index: 3;
+        margin-left: -300px;
+        padding: 50px 20px;
+
+        & .main {
+            color: #ffffff;
+            margin-bottom: -35px;
+        }
+
+        & .half {
+            color: @black;
+            -webkit-text-stroke: #ffffff 1px;
+            height: 70px;
+            overflow: hidden;
+
+            // &.top {
+            //     line-height: 1.5em;
+            // }
+
+            &.bottom {
+                line-height: 0.25em;
+            }
         }
     }
 }
@@ -338,6 +371,12 @@ main {
     line-height: 130vh;
     justify-self: center;
     height: 100vh;
+    z-index: 1;
+
+    &.v2 {
+        margin-left: -400px;
+        color: rgba(255, 255, 255, 0);
+    }
 }
 
 .question-mark-spray {
@@ -354,6 +393,7 @@ main {
     position: absolute;
     left: 700px;
     bottom: 0;
+    z-index: 2;
 }
 
 .statue-half-face {
@@ -370,6 +410,7 @@ main {
     margin-left: 70px;
     position: relative;
     margin-top: 200px;
+    z-index: 2;
 
     & .p1 {
         width: 320px;
@@ -473,8 +514,32 @@ main {
     margin-right: -1px;
 }
 
-.four,
-.five,
+.thales-illustration {
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 80px;
+    left: 820px;
+    z-index: 3;
+    mix-blend-mode: lighten;
+}
+
+.angel-statue {
+    margin-left: -250px;
+    z-index: 3;
+}
+
+.sec5-content-container {
+    margin-left: -320px;
+    padding-left: 300px;
+    background-color: #ffffff;
+}
+
+.subtitle {
+    font-family: @fungisHeavy;
+    color: @black;
+}
+
 .six,
 .seven {
     width: 100vw;

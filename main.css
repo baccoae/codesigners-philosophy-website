@@ -151,7 +151,7 @@ main {
   position: absolute;
   align-self: center;
   bottom: -50px;
-  width: 44%;
+  width: 54%;
 }
 .two {
   flex-direction: column;
@@ -163,10 +163,10 @@ main {
   position: relative;
   display: flex;
   align-self: flex-start;
-  margin-top: 12%;
   margin-bottom: 40px;
 }
 .title.style1 {
+  margin-top: 12%;
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
@@ -186,7 +186,7 @@ main {
   white-space: nowrap;
 }
 .title.style2 {
-  display: flex;
+  margin-top: 12%;
   flex-direction: column;
   color: #ffffff;
   position: relative;
@@ -204,6 +204,31 @@ main {
   text-transform: uppercase;
   font-size: 3em;
   width: 500px;
+}
+.title.style3 {
+  flex-direction: column;
+  font-family: "Fungis Heavy";
+  text-transform: uppercase;
+  font-size: 10em;
+  align-self: center;
+  gap: 20px;
+  background-color: #1a1b1f;
+  z-index: 3;
+  margin-left: -300px;
+  padding: 50px 20px;
+}
+.title.style3 .main {
+  color: #ffffff;
+  margin-bottom: -35px;
+}
+.title.style3 .half {
+  color: #1a1b1f;
+  -webkit-text-stroke: #ffffff 1px;
+  height: 70px;
+  overflow: hidden;
+}
+.title.style3 .half.bottom {
+  line-height: 0.25em;
 }
 .catchphrase {
   text-transform: uppercase;
@@ -278,6 +303,11 @@ main {
   line-height: 130vh;
   justify-self: center;
   height: 100vh;
+  z-index: 1;
+}
+.section-nb.v2 {
+  margin-left: -400px;
+  color: rgba(255, 255, 255, 0);
 }
 .question-mark-spray {
   position: absolute;
@@ -292,6 +322,7 @@ main {
   position: absolute;
   left: 700px;
   bottom: 0;
+  z-index: 2;
 }
 .statue-half-face {
   width: 700px;
@@ -306,6 +337,7 @@ main {
   margin-left: 70px;
   position: relative;
   margin-top: 200px;
+  z-index: 2;
 }
 .sec3-content-container .p1 {
   width: 320px;
@@ -395,8 +427,28 @@ main {
   margin-left: -80px;
   margin-right: -1px;
 }
-.four,
-.five,
+.thales-illustration {
+  width: 500px;
+  margin: auto;
+  position: absolute;
+  top: 80px;
+  left: 820px;
+  z-index: 3;
+  mix-blend-mode: lighten;
+}
+.angel-statue {
+  margin-left: -250px;
+  z-index: 3;
+}
+.sec5-content-container {
+  margin-left: -320px;
+  padding-left: 300px;
+  background-color: #ffffff;
+}
+.subtitle {
+  font-family: "Fungis Heavy";
+  color: #1a1b1f;
+}
 .six,
 .seven {
   width: 100vw;
