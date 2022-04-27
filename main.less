@@ -130,7 +130,7 @@ nav {
 
 main {
     overscroll-behavior: none;
-    width: 703.7%;
+    width: 1103.7%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -533,17 +533,206 @@ main {
 }
 
 .sec5-content-container {
-    margin-left: -320px;
-    padding-left: 300px;
+    display: flex;
+    flex-direction: row;
     background-color: #ffffff;
+    padding-left: 300px;
+    margin-left: -320px;
+}
+
+.part1-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec5-title-container {
+    position: relative;
+    margin-bottom: 70px;
 }
 
 .subtitle {
     font-family: @fungisHeavy;
-    color: @black;
+    text-transform: uppercase;
+    font-size: 5em;
+    position: relative;
+    top: 60px;
+    z-index: 2;
+
+    &.dark {
+        color: @black;
+    }
+
+    &.light {
+        color: #ffffff;
+    }
+
+    &-nb {
+        font-family: @fungisHeavy;
+        font-size: 15em;
+        position: absolute;
+        left: -200px;
+        top: -50px;
+        z-index: 1;
+
+        &.dark {
+            color: #ffffff;
+            -webkit-text-stroke: @black 1px;
+        }
+
+        &.light {
+            color: @black;
+            -webkit-text-stroke: #ffffff 1px;
+        }
+    }
+}
+
+h3 {
+    font-family: @fungisRegular;
+    position: relative;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-top: 50px;
+    width: 380px;
+    z-index: 2;
+
+    &.dark {
+        color: @black;
+    }
+
+    &.light {
+        color: #ffffff;
+    }
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    & .equation {
+        width: 300px;
+        position: absolute;
+        top: 150px;
+        right: 0;
+    }
+}
+
+.paragraph-box {
+    width: 500px;
+    margin-right: 150px;
+    position: relative;
+    z-index: 1;
+
+    &.dark {
+        color: @black;
+    }
+
+    &.light {
+        color: #ffffff;
+    }
+
+    &.part2 {
+        align-self: center;
+    }
+
+    &.part3 {
+        margin-top: 150px;
+    }
+}
+
+h4 {
+    font-family: @fungisHeavy;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: @anonymousRegular;
+    font-size: 14px;
+}
+
+.pythagoras-tape {
+    width: 1600px;
+    position: absolute;
+    bottom: -50px;
+    left: 2000px;
+}
+
+.crossed-statue {
+    margin-left: -100px;
+}
+
+.part2-content {
+    display: flex;
+    flex-direction: row;
+    background-color: @black;
+    position: relative;
+    margin-right: 150px;
+}
+
+.section-transition {
+    height: 100vh;
+    width: 500px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, @black);
+    margin-left: -700px;
+}
+
+.thales-theorem {
+    width: 1150px;
+    margin-right: 100px;
+}
+
+.background-thales-figure {
+    position: absolute;
+    z-index: 0;
+    // width: 1200px;
+    left: -300px;
+}
+
+.thales-title {
+    color: #ffffff;
+    font-family: @fungisHeavy;
+    position: absolute;
+    align-self: center;
+    left: 100px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.thales-rule {
+    position: absolute;
+    font-family: @anonymousRegular;
+    font-style: italic;
+    color: #ffffff;
+    width: 500px;
+    top: 200px;
+    left: 500px;
+}
+
+.spray-sm-2 {
+    width: 200px;
+    position: absolute;
+    left: 375px;
+    top: 25px;
+    z-index: 1;
+}
+
+.background-pillar {
+    position: absolute;
+    z-index: 0;
+}
+
+.aristotle-statue {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    object-fit: contain;
+    align-self: flex-end;
 }
 
 .six,
 .seven {
     width: 100vw;
+    background-color: #1a1b1f;
 }
