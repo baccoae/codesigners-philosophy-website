@@ -15,6 +15,6 @@ getTotalWidth = () => {
             trigger: ".main",
             pin: true,
             scrub: 1,
-            end: "+=5500",
+            end: "+=7500",
         }
     });

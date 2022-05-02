@@ -130,7 +130,7 @@ nav {
 
 main {
     overscroll-behavior: none;
-    width: 1103.7%;
+    width: 2003.7%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -147,6 +147,15 @@ main {
 
     &.light {
         background-color: #ffffff;
+    }
+
+    &.four {
+        background-color: #ffffff;
+    }
+
+    &.six {
+        display: flex;
+        margin-right: 400px;
     }
 }
 
@@ -380,6 +389,13 @@ main {
         margin-left: -400px;
         color: rgba(255, 255, 255, 0);
     }
+
+    &.light {
+        color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke: @black 3px;
+        position: absolute;
+        left: 200px;
+    }
 }
 
 .question-mark-spray {
@@ -447,10 +463,6 @@ main {
 .face-transition-1 {
     margin-left: -80px;
     margin-right: -1px;
-}
-
-.four {
-    background-color: #ffffff;
 }
 
 .face-shape-outline {
@@ -650,6 +662,7 @@ h4 {
 p {
     font-family: @anonymousRegular;
     font-size: 14px;
+    line-height: 1.2em;
 }
 
 .pythagoras-tape {
@@ -731,7 +744,115 @@ p {
     align-self: flex-end;
 }
 
-.six,
+.gradient-transition {
+    &-begin {
+        height: 100vh;
+        width: 800px;
+        // background-color: rgba(0, 0, 255, 0.2);
+        background: linear-gradient(
+            to right,
+            @black 40%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        position: absolute;
+        left: 0;
+        z-index: 2;
+    }
+
+    &-end {
+        height: 100vh;
+        width: 300px;
+        // background-color: rgba(0, 0, 255, 0.2);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, @black 100%);
+        position: absolute;
+        right: 0;
+        z-index: 2;
+    }
+}
+
+.clouds-container {
+    position: relative;
+
+    & .cloud {
+        &.main {
+            left: 200px;
+            width: 100vw;
+        }
+
+        &.one {
+            position: absolute;
+            opacity: 0.8;
+            width: 300px;
+            top: 200px;
+            left: -200px;
+            z-index: 3;
+        }
+
+        &.two {
+            position: absolute;
+            opacity: 0.8;
+            width: 400px;
+            top: 550px;
+            z-index: 3;
+            left: -250px;
+        }
+
+        &.three {
+            position: absolute;
+            opacity: 0.8;
+            width: 700px;
+            left: 0px;
+            bottom: -100px;
+            z-index: 3;
+        }
+
+        &.four {
+            position: absolute;
+            opacity: 0.8;
+            width: 800px;
+            left: 0px;
+            top: 0;
+            z-index: 3;
+        }
+
+        &.five {
+            position: absolute;
+            opacity: 0.8;
+            width: 900px;
+            right: -500px;
+            bottom: 0;
+            z-index: 3;
+            transform: rotate(180deg);
+        }
+
+        &.six {
+            position: absolute;
+            opacity: 0.8;
+            width: 600px;
+            right: -300px;
+            top: -100px;
+            z-index: 3;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.angel-statue-2 {
+    position: absolute;
+    left: 300px;
+    bottom: 0;
+    z-index: 3;
+    width: 80%;
+}
+
+.graffiti-crown {
+    position: absolute;
+    width: 350px;
+    z-index: 3;
+    left: 700px;
+    top: 200px;
+}
+
 .seven {
     width: 100vw;
     background-color: #1a1b1f;

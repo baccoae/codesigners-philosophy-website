@@ -101,7 +101,7 @@ nav .nav-author_text {
 }
 main {
   overscroll-behavior: none;
-  width: 1103.7%;
+  width: 2003.7%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -116,6 +116,13 @@ main {
 }
 .section.light {
   background-color: #ffffff;
+}
+.section.four {
+  background-color: #ffffff;
+}
+.section.six {
+  display: flex;
+  margin-right: 400px;
 }
 .one {
   width: 100vw;
@@ -312,6 +319,12 @@ main {
   margin-left: -400px;
   color: rgba(255, 255, 255, 0);
 }
+.section-nb.light {
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: #1a1b1f 3px;
+  position: absolute;
+  left: 200px;
+}
 .question-mark-spray {
   position: absolute;
   width: 150px;
@@ -371,9 +384,6 @@ main {
 .face-transition-1 {
   margin-left: -80px;
   margin-right: -1px;
-}
-.four {
-  background-color: #ffffff;
 }
 .face-shape-outline {
   position: absolute;
@@ -541,6 +551,7 @@ h4 {
 p {
   font-family: "Anonymous Regular";
   font-size: 14px;
+  line-height: 1.2em;
 }
 .pythagoras-tape {
   width: 1600px;
@@ -609,7 +620,93 @@ p {
   object-fit: contain;
   align-self: flex-end;
 }
-.six,
+.gradient-transition-begin {
+  height: 100vh;
+  width: 800px;
+  background: linear-gradient(to right, #1a1b1f 40%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+.gradient-transition-end {
+  height: 100vh;
+  width: 300px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #1a1b1f 100%);
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.clouds-container {
+  position: relative;
+}
+.clouds-container .cloud.main {
+  left: 200px;
+  width: 100vw;
+}
+.clouds-container .cloud.one {
+  position: absolute;
+  opacity: 0.8;
+  width: 300px;
+  top: 200px;
+  left: -200px;
+  z-index: 3;
+}
+.clouds-container .cloud.two {
+  position: absolute;
+  opacity: 0.8;
+  width: 400px;
+  top: 550px;
+  z-index: 3;
+  left: -250px;
+}
+.clouds-container .cloud.three {
+  position: absolute;
+  opacity: 0.8;
+  width: 700px;
+  left: 0px;
+  bottom: -100px;
+  z-index: 3;
+}
+.clouds-container .cloud.four {
+  position: absolute;
+  opacity: 0.8;
+  width: 800px;
+  left: 0px;
+  top: 0;
+  z-index: 3;
+}
+.clouds-container .cloud.five {
+  position: absolute;
+  opacity: 0.8;
+  width: 900px;
+  right: -500px;
+  bottom: 0;
+  z-index: 3;
+  transform: rotate(180deg);
+}
+.clouds-container .cloud.six {
+  position: absolute;
+  opacity: 0.8;
+  width: 600px;
+  right: -300px;
+  top: -100px;
+  z-index: 3;
+  transform: rotate(180deg);
+}
+.angel-statue-2 {
+  position: absolute;
+  left: 300px;
+  bottom: 0;
+  z-index: 3;
+  width: 80%;
+}
+.graffiti-crown {
+  position: absolute;
+  width: 350px;
+  z-index: 3;
+  left: 700px;
+  top: 200px;
+}
 .seven {
   width: 100vw;
   background-color: #1a1b1f;
