@@ -101,7 +101,7 @@ nav .nav-author_text {
 }
 main {
   overscroll-behavior: none;
-  width: 2003.7%;
+  width: 3503.7%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -239,6 +239,41 @@ main {
 }
 .title.style3 .half.bottom {
   line-height: 0.25em;
+}
+.title.style4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  margin-right: 200px;
+  position: relative;
+  align-self: center;
+}
+.title.style4 span {
+  font-family: "Fungis Heavy";
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2em;
+  width: 300px;
+  text-align: center;
+  z-index: 2;
+}
+.title.style4 .nb {
+  -webkit-text-stroke: #ffffff 1px;
+  color: #1a1b1f;
+  font-family: "Fungis Heavy";
+  font-size: 7em;
+  position: absolute;
+  top: -100px;
+  z-index: 1;
+}
+.title.style4 .graffiti {
+  font-family: "Graffiti City";
+  color: #8337ff;
+  position: absolute;
+  left: -120px;
+  font-size: 2.5em;
+  transform: rotate(-10deg);
+  top: -10px;
 }
 .catchphrase {
   text-transform: uppercase;
@@ -620,6 +655,10 @@ p {
   object-fit: contain;
   align-self: flex-end;
 }
+.transition-section {
+  display: flex;
+  position: relative;
+}
 .gradient-transition-begin {
   height: 100vh;
   width: 800px;
@@ -706,6 +745,39 @@ p {
   z-index: 3;
   left: 700px;
   top: 200px;
+}
+.universe-constellation-1 {
+  width: 200px;
+  position: absolute;
+  left: 1700px;
+  top: 100px;
+}
+.universe-constellation-2 {
+  width: 300px;
+  position: absolute;
+  left: 2200px;
+  top: 400px;
+}
+.sec6-intro {
+  display: flex;
+  width: 200vw;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 500px;
+}
+.sec6-intro span {
+  font-family: "Anonymous Regular";
+  color: #ffffff;
+  position: absolute;
+  justify-self: center;
+}
+.sec6-intro .light-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: #ffffff 0 0 10px 10px;
 }
 .seven {
   width: 100vw;
