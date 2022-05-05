@@ -101,7 +101,7 @@ nav .nav-author_text {
 }
 main {
   overscroll-behavior: none;
-  width: 3503.7%;
+  width: 4203.7%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -110,19 +110,13 @@ main {
 .section {
   height: 100%;
   display: flex;
+  margin-left: -1px;
 }
 .section.dark {
   background-color: #1a1b1f;
 }
 .section.light {
   background-color: #ffffff;
-}
-.section.four {
-  background-color: #ffffff;
-}
-.section.six {
-  display: flex;
-  margin-right: 400px;
 }
 .one {
   width: 100vw;
@@ -274,6 +268,27 @@ main {
   font-size: 2.5em;
   transform: rotate(-10deg);
   top: -10px;
+}
+.title.style5 {
+  position: absolute;
+  z-index: 2;
+  align-self: center;
+  left: 150px;
+}
+.title.style5 span {
+  font-family: "Fungis Heavy";
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12rem;
+}
+.title.style5 .graffiti {
+  font-family: "Graffiti City";
+  color: #8337ff;
+  font-size: 6em;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  transform: rotate(-5deg);
 }
 .catchphrase {
   text-transform: uppercase;
@@ -577,6 +592,9 @@ h3.light {
 .paragraph-box.part3 {
   margin-top: 150px;
 }
+.paragraph-box.no-title {
+  margin-top: 50px;
+}
 h4 {
   font-family: "Fungis Heavy";
   font-size: 2em;
@@ -643,6 +661,9 @@ p {
   left: 375px;
   top: 25px;
   z-index: 1;
+}
+.spray-sm-2.religion {
+  left: 275px;
 }
 .background-pillar {
   position: absolute;
@@ -765,21 +786,173 @@ p {
   align-self: center;
   margin-left: 500px;
 }
-.sec6-intro span {
+.sec6-intro .light-intro {
   font-family: "Anonymous Regular";
   color: #ffffff;
-  position: absolute;
   justify-self: center;
+  position: absolute;
+  top: 300px;
+  z-index: 1;
 }
 .sec6-intro .light-circle {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  position: absolute;
   background-color: #ffffff;
   box-shadow: #ffffff 0 0 10px 10px;
+  margin-left: 150px;
+  position: absolute;
+  top: 375px;
+  z-index: 2;
 }
-.seven {
-  width: 100vw;
+.sec6-intro .light-outro {
+  font-family: "Anonymous Regular";
+  color: #1a1b1f;
+  justify-self: center;
+  margin-left: 400px;
+  opacity: 0;
+  z-index: 3;
+  position: absolute;
+  top: 375px;
+}
+.sec6-content-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 4;
+  background-color: #ffffff;
+  height: 100vh;
+  margin-left: -1400px;
+}
+.sec6-title-container {
+  position: relative;
+  margin-bottom: 70px;
+  z-index: 4;
+  width: 600px;
+}
+.sec6-title-container.rotated {
+  transform: rotate(-90deg);
+  top: -400px;
+  margin-left: 300px;
+}
+.solar-system {
+  position: absolute;
+  top: -70px;
+  left: 900px;
+  width: 600px;
+}
+.plato-teaching {
+  width: 400px;
+  position: relative;
+  margin-left: -400px;
+  bottom: -300px;
+}
+.sec6-content-part2 {
+  display: flex;
+  flex-direction: row;
   background-color: #1a1b1f;
+  position: relative;
+  top: -236px;
+}
+.plato-triptych {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  margin-left: -1px;
+}
+.plato-triptych .column {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100%;
+  padding: 75px 35px;
+}
+.plato-triptych .column.white {
+  background-color: #ffffff;
+}
+.plato-triptych .column.white a {
+  word-break: break-all;
+  color: #1a1b1f;
+}
+.plato-triptych .column.purple {
+  background-color: #8337ff;
+  color: #ffffff;
+}
+.plato-triptych .column.purple a {
+  word-break: break-all;
+  color: #ffffff;
+}
+.plato-triptych .column.black {
+  background-color: #1a1b1f;
+  color: #8337ff;
+}
+.plato-triptych .column.black a {
+  word-break: break-all;
+  color: #8337ff;
+}
+.grave {
+  align-self: flex-end;
+  width: 450px;
+  margin-right: 300px;
+}
+.second-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.second-content .content-row {
+  top: 100px;
+  margin-left: -350px;
+}
+.second-content .content-row .no-title {
+  margin-top: 80px;
+}
+.second-content .graffiti {
+  font-family: "Graffiti City";
+  color: #8337ff;
+  width: 550px;
+  position: absolute;
+  font-size: 2.5em;
+  top: -25px;
+  left: 300px;
+}
+.custom {
+  left: 1350px;
+  top: 250px;
+  position: absolute;
+}
+.column-transition {
+  margin-left: -300px;
+  z-index: 2;
+}
+.organisation-container {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  gap: 15px;
+}
+.organisation-container span {
+  font-family: "Anonymous Regular";
+  color: #ffffff;
+  margin: 40px 0;
+}
+.organisation-container .organisation-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid #ffffff 0.5px;
+  cursor: pointer;
+}
+.organisation-container .organisation-item h3 {
+  font-family: "Fungis Heavy";
+  text-transform: uppercase;
+  color: #1a1b1f;
+  font-size: 6em;
+  line-height: 0.5em;
+  -webkit-text-stroke: #ffffff 0.5px;
+}
+.organisation-container .organisation-item .chevron {
+  max-width: 70px;
+  align-self: center;
 }
