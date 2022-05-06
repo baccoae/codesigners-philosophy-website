@@ -939,20 +939,56 @@ p {
 .organisation-container .organisation-item {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  position: relative;
+  border-bottom: solid #ffffff 0.5px;
+  background-color: #1a1b1f;
+  cursor: pointer;
+  z-index: 3;
+}
+.organisation-container .organisation-item .organisation-tab {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: solid #ffffff 0.5px;
-  cursor: pointer;
 }
-.organisation-container .organisation-item h3 {
+.organisation-container .organisation-item .organisation-tab h3 {
   font-family: "Fungis Heavy";
   text-transform: uppercase;
   color: #1a1b1f;
   font-size: 6em;
   line-height: 0.5em;
   -webkit-text-stroke: #ffffff 0.5px;
+  pointer-events: none;
 }
-.organisation-container .organisation-item .chevron {
+.organisation-container .organisation-item .organisation-tab .chevron {
   max-width: 70px;
   align-self: center;
+  pointer-events: none;
+}
+.organisation-container .organisation-item .organisation-content {
+  display: flex;
+  flex-direction: row;
+  height: 0px;
+  overflow: hidden;
+  opacity: 1;
+}
+.organisation-container .organisation-item .organisation-content span {
+  font-family: "Fungis Heavy";
+  text-transform: uppercase;
+  font-size: 2em;
+  width: 30%;
+  margin-top: 0;
+  padding-top: 75px;
+  margin-right: 75px;
+  min-height: 400px;
+}
+.organisation-container .organisation-item .organisation-content p {
+  font-family: "Anonymous Regular";
+  color: #ffffff;
+  width: 50%;
+  padding-top: 75px;
+  column-count: 2;
+  column-gap: 50px;
+  min-height: 400px;
 }
