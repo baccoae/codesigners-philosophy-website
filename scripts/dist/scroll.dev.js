@@ -33,8 +33,7 @@ gsap.to(".light-circle", {
     start: "left center",
     end: "left 500px",
     // pin: true,
-    scrub: true // markers: true,
-
+    scrub: true
   },
   scale: 55,
   x: 400,
@@ -48,8 +47,7 @@ gsap.to(".light-intro", {
     start: "left center",
     end: "left 400px",
     // pin: true,
-    scrub: true // markers: true,
-
+    scrub: true
   },
   y: -40,
   opacity: 0,
@@ -63,8 +61,7 @@ gsap.to(".light-outro", {
     start: "left center-=400px",
     end: "left 200px",
     // pin: true,
-    scrub: true,
-    markers: true
+    scrub: true
   },
   y: -40,
   opacity: 1,

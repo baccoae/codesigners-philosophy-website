@@ -41,9 +41,15 @@ organisation1.addEventListener("click", (e) => {
 
 organisation2.addEventListener("click", (e) => {
     if (organisation2.classList.contains("inactive")) {
-        gsap.to(e.target, {
+        gsap.to(organisation2, {
             y: -114,
             duration: 0.8,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(organisation2.children[1], {
+            height: "400px",
+            duration: 1,
             ease: Power4.easeInOut
         })
 
@@ -56,9 +62,15 @@ organisation2.addEventListener("click", (e) => {
     }
 
     else if (organisation2.classList.contains("active")) {
-        gsap.to(e.target, {
+        gsap.to(organisation2, {
             y: 0,
             duration: 0.8,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(organisation2.children[1], {
+            height: "0px",
+            duration: 1,
             ease: Power4.easeInOut
         })
 
@@ -74,9 +86,15 @@ organisation2.addEventListener("click", (e) => {
 
 organisation3.addEventListener("click", (e) => {
     if (organisation3.classList.contains("inactive")) {
-        gsap.to(e.target, {
+        gsap.to(organisation3, {
             y: -227,
             duration: 0.8,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(organisation3.children[1], {
+            height: "400px",
+            duration: 1,
             ease: Power4.easeInOut
         })
 
@@ -89,9 +107,15 @@ organisation3.addEventListener("click", (e) => {
     }
 
     else if (organisation3.classList.contains("active")) {
-        gsap.to(e.target, {
+        gsap.to(organisation3, {
             y: 0,
             duration: 0.8,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(organisation3.children[1], {
+            height: "0px",
+            duration: 1,
             ease: Power4.easeInOut
         })
 
@@ -107,9 +131,15 @@ organisation3.addEventListener("click", (e) => {
 
 organisation4.addEventListener("click", (e) => {
     if (organisation4.classList.contains("inactive")) {
-        gsap.to(e.target, {
+        gsap.to(organisation4, {
             y: -341,
             duration: 0.8,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(organisation4.children[1], {
+            height: "400px",
+            duration: 1,
             ease: Power4.easeInOut
         })
 
@@ -122,9 +152,15 @@ organisation4.addEventListener("click", (e) => {
     }
 
     else if (organisation4.classList.contains("active")) {
-        gsap.to(e.target, {
+        gsap.to(organisation4, {
             y: 0,
             duration: 0.8,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(organisation4.children[1], {
+            height: "0px",
+            duration: 1,
             ease: Power4.easeInOut
         })
 
@@ -140,9 +176,15 @@ organisation4.addEventListener("click", (e) => {
 
 organisation5.addEventListener("click", (e) => {
     if (organisation5.classList.contains("inactive")) {
-        gsap.to(e.target, {
+        gsap.to(organisation5, {
             y: -455,
             duration: 0.8,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(organisation5.children[1], {
+            height: "400px",
+            duration: 1,
             ease: Power4.easeInOut
         })
 
@@ -155,9 +197,15 @@ organisation5.addEventListener("click", (e) => {
     }
 
     else if (organisation5.classList.contains("active")) {
-        gsap.to(e.target, {
+        gsap.to(organisation5, {
             y: 0,
             duration: 0.8,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(organisation5.children[1], {
+            height: "0px",
+            duration: 1,
             ease: Power4.easeInOut
         })
 
