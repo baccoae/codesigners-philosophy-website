@@ -290,6 +290,29 @@ main {
   left: 300px;
   transform: rotate(-5deg);
 }
+.title.style6 {
+  position: relative;
+}
+.title.style6 .nb {
+  font-family: "Fungis Heavy";
+  color: #1a1b1f;
+  -webkit-text-stroke: 0.5px #ffffff;
+  position: absolute;
+  z-index: 1;
+  font-size: 18em;
+  top: -40px;
+  left: 0;
+}
+.title.style6 span {
+  font-family: "Fungis Heavy";
+  color: #ffffff;
+  text-transform: uppercase;
+  z-index: 2;
+  position: absolute;
+  top: 120px;
+  left: 75px;
+  font-size: 2em;
+}
 .catchphrase {
   text-transform: uppercase;
   color: #ffffff;
@@ -1099,4 +1122,130 @@ p {
   bottom: 0;
   z-index: 1;
   width: 1400px;
+}
+.about-title {
+  background-color: #8337ff;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.about-title span {
+  font-family: "Fungis Heavy";
+  color: #ffffff;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  font-size: 8em;
+}
+.about-statue {
+  position: relative;
+  width: 750px;
+  align-self: flex-end;
+  z-index: 2;
+  bottom: -100px;
+  left: 100px;
+}
+.creator-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 550px;
+  align-self: center;
+  justify-content: space-between;
+  transform: rotate(-90deg);
+  position: relative;
+  left: -100px;
+  z-index: 3;
+}
+.creator-list .creator-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid #ffffff;
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+.creator-list .creator-item .name {
+  font-family: "Fungis Heavy";
+  color: #ffffff;
+  font-size: 4em;
+}
+.creator-list .creator-item .desc {
+  font-family: "Anonymous Regular";
+  color: #ffffff;
+}
+.creator-list .creator-item .flag {
+  width: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.infographic {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Fungis Heavy";
+  text-transform: uppercase;
+  align-self: center;
+  position: relative;
+}
+.infographic .col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.infographic .col1 .planning {
+  display: flex;
+  flex-direction: column;
+  color: #8337ff;
+  align-items: center;
+}
+.infographic .col1 .planning .nb {
+  font-size: 15em;
+  line-height: 0.7em;
+}
+.infographic .col1 .planning span {
+  font-size: 1.5em;
+}
+.infographic .col1 .planning .divider {
+  width: 100%;
+  height: 20px;
+  background-color: #8337ff;
+  margin-top: 20px;
+}
+.infographic .col1 .design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.infographic .col1 .design .nb {
+  font-size: 12em;
+  line-height: 0.7em;
+}
+.infographic .col1 .design span {
+  font-size: 1.5em;
+}
+.infographic .col2 .code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 170px;
+  top: 150px;
+  height: 100px;
+  transform: rotate(90deg);
+  color: #1a1b1f;
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+.infographic .col2 .code .nb {
+  font-size: 10em;
+  line-height: 0.7em;
+}
+.infographic .col2 .code span {
+  font-size: 4em;
+  height: 700px;
 }

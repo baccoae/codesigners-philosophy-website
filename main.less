@@ -353,6 +353,32 @@ main {
             transform: rotate(-5deg);
         }
     }
+
+    &.style6 {
+        position: relative;
+
+        & .nb {
+            font-family: @fungisHeavy;
+            color: @black;
+            -webkit-text-stroke: 0.5px #ffffff;
+            position: absolute;
+            z-index: 1;
+            font-size: 18em;
+            top: -40px;
+            left: 0;
+        }
+
+        & span {
+            font-family: @fungisHeavy;
+            color: #ffffff;
+            text-transform: uppercase;
+            z-index: 2;
+            position: absolute;
+            top: 120px;
+            left: 75px;
+            font-size: 2em;
+        }
+    }
 }
 
 .catchphrase {
@@ -1307,5 +1333,153 @@ p {
         bottom: 0;
         z-index: 1;
         width: 1400px;
+    }
+}
+
+.about-title {
+    background-color: @purple-primary;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    & span {
+        font-family: @fungisHeavy;
+        color: #ffffff;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        font-size: 8em;
+    }
+}
+
+.about-statue {
+    position: relative;
+    width: 750px;
+    align-self: flex-end;
+    z-index: 2;
+    bottom: -100px;
+    left: 100px;
+}
+
+.creator-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 550px;
+    align-self: center;
+    justify-content: space-between;
+    transform: rotate(-90deg);
+    position: relative;
+    left: -100px;
+    z-index: 3;
+
+    & .creator-item {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 0.5px solid #ffffff;
+        height: 100px;
+        width: 100%;
+        position: relative;
+
+        & .name {
+            font-family: @fungisHeavy;
+            color: #ffffff;
+            font-size: 4em;
+        }
+
+        & .desc {
+            font-family: @anonymousRegular;
+            color: #ffffff;
+        }
+
+        & .flag {
+            width: 40px;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+        }
+    }
+}
+
+.infographic {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    font-family: @fungisHeavy;
+    text-transform: uppercase;
+    align-self: center;
+    position: relative;
+
+    & .col1 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        & .planning {
+            display: flex;
+            flex-direction: column;
+            color: @purple-primary;
+            align-items: center;
+
+            & .nb {
+                font-size: 15em;
+                line-height: 0.7em;
+            }
+
+            & span {
+                font-size: 1.5em;
+            }
+
+            & .divider {
+                width: 100%;
+                height: 20px;
+                background-color: @purple-primary;
+                margin-top: 20px;
+            }
+        }
+
+        & .design {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #ffffff;
+
+            & .nb {
+                font-size: 12em;
+                line-height: 0.7em;
+            }
+
+            & span {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    & .col2 {
+        & .code {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            left: 170px;
+            top: 150px;
+            height: 100px;
+            transform: rotate(90deg);
+            color: @black;
+            -webkit-text-stroke: 0.5px #ffffff;
+
+            & .nb {
+                font-size: 10em;
+                line-height: 0.7em;
+            }
+
+            & span {
+                font-size: 4em;
+                height: 700px;
+            }
+        }
     }
 }
