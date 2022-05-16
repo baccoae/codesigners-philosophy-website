@@ -13,7 +13,7 @@ window.onload = function () {
     }
 
     let tween = gsap.to(sections, {
-        x: () => -getTotalWidth(),
+        x: () => -getTotalWidth() + 1150,
         ease: "none",
         scrollTrigger: {
             trigger: ".main",

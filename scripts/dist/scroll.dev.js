@@ -15,7 +15,7 @@ window.onload = function () {
 
   var tween = gsap.to(sections, {
     x: function x() {
-      return -getTotalWidth();
+      return -getTotalWidth() + 1150;
     },
     ease: "none",
     scrollTrigger: {

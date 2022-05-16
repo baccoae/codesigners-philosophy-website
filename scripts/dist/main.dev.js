@@ -224,7 +224,7 @@ var sec1Link = document.querySelector('.nav-sec1');
 sec1Link.addEventListener("click", function (e) {
   e.preventDefault();
   var sec1Target = sec1Link.getAttribute("href");
-  var sec1pos = document.querySelector(sec1Target).offsetLeft - document.querySelector(sec1Target).offsetLeft / 2;
+  var sec1pos = document.querySelector(sec1Target).offsetLeft - 850;
   gsap.to(window, {
     scrollTo: sec1pos,
     duration: 1.5,
@@ -247,7 +247,7 @@ var sec2Link = document.querySelector('.nav-sec2');
 sec2Link.addEventListener("click", function (e) {
   e.preventDefault();
   var sec2Target = sec2Link.getAttribute("href");
-  var sec2pos = document.querySelector(sec2Target).offsetLeft - 5460;
+  var sec2pos = document.querySelector(sec2Target).offsetLeft - 5410;
   gsap.to(window, {
     scrollTo: sec2pos,
     duration: 1.5,
@@ -270,7 +270,7 @@ var sec3Link = document.querySelector('.nav-sec3');
 sec3Link.addEventListener("click", function (e) {
   e.preventDefault();
   var sec3Target = sec3Link.getAttribute("href");
-  var sec3pos = document.querySelector(sec3Target).offsetLeft - 11260;
+  var sec3pos = document.querySelector(sec3Target).offsetLeft - 11150;
   gsap.to(window, {
     scrollTo: sec3pos,
     duration: 1.5,
@@ -293,7 +293,7 @@ var sec4Link = document.querySelector('.nav-sec4');
 sec4Link.addEventListener("click", function (e) {
   e.preventDefault();
   var sec4Target = sec4Link.getAttribute("href");
-  var sec4pos = document.querySelector(sec4Target).offsetLeft - 18485;
+  var sec4pos = document.querySelector(sec4Target).offsetLeft - 18320;
   gsap.to(window, {
     scrollTo: sec4pos,
     duration: 1.5,
@@ -316,7 +316,7 @@ var sec5Link = document.querySelector('.nav-sec5');
 sec5Link.addEventListener("click", function (e) {
   e.preventDefault();
   var sec5Target = sec5Link.getAttribute("href");
-  var sec5pos = document.querySelector(sec5Target).offsetLeft - 22720;
+  var sec5pos = document.querySelector(sec5Target).offsetLeft - 22555;
   gsap.to(window, {
     scrollTo: sec5pos,
     duration: 1.5,
@@ -334,4 +334,3 @@ sec5Link.addEventListener("click", function (e) {
   });
   menuState = "closed";
 });
-console.log(sec2.offsetLeft);

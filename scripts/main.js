@@ -280,7 +280,7 @@ let sec1Link = document.querySelector('.nav-sec1')
 sec1Link.addEventListener("click", (e) => {
     e.preventDefault()
     let sec1Target = sec1Link.getAttribute("href")
-    let sec1pos = document.querySelector(sec1Target).offsetLeft - (document.querySelector(sec1Target).offsetLeft / 2)
+    let sec1pos = document.querySelector(sec1Target).offsetLeft - 850
     gsap.to(window, {
         scrollTo: (sec1pos),
         duration: 1.5,
@@ -307,7 +307,7 @@ let sec2Link = document.querySelector('.nav-sec2')
 sec2Link.addEventListener("click", (e) => {
     e.preventDefault()
     let sec2Target = sec2Link.getAttribute("href")
-    let sec2pos = document.querySelector(sec2Target).offsetLeft - 5460
+    let sec2pos = document.querySelector(sec2Target).offsetLeft - 5410
     gsap.to(window, {
         scrollTo: (sec2pos),
         duration: 1.5,
@@ -335,7 +335,7 @@ let sec3Link = document.querySelector('.nav-sec3')
 sec3Link.addEventListener("click", (e) => {
     e.preventDefault()
     let sec3Target = sec3Link.getAttribute("href")
-    let sec3pos = document.querySelector(sec3Target).offsetLeft - 11260
+    let sec3pos = document.querySelector(sec3Target).offsetLeft - 11150
     gsap.to(window, {
         scrollTo: (sec3pos),
         duration: 1.5,
@@ -363,7 +363,7 @@ let sec4Link = document.querySelector('.nav-sec4')
 sec4Link.addEventListener("click", (e) => {
     e.preventDefault()
     let sec4Target = sec4Link.getAttribute("href")
-    let sec4pos = document.querySelector(sec4Target).offsetLeft - 18485
+    let sec4pos = document.querySelector(sec4Target).offsetLeft - 18320
     gsap.to(window, {
         scrollTo: (sec4pos),
         duration: 1.5,
@@ -391,7 +391,7 @@ let sec5Link = document.querySelector('.nav-sec5')
 sec5Link.addEventListener("click", (e) => {
     e.preventDefault()
     let sec5Target = sec5Link.getAttribute("href")
-    let sec5pos = document.querySelector(sec5Target).offsetLeft - 22720
+    let sec5pos = document.querySelector(sec5Target).offsetLeft - 22555
     gsap.to(window, {
         scrollTo: (sec5pos),
         duration: 1.5,
@@ -412,5 +412,3 @@ sec5Link.addEventListener("click", (e) => {
 
     menuState = "closed"
 })
-
-console.log(sec2.offsetLeft);
