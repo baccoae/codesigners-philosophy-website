@@ -176,3 +176,162 @@ organisation5.addEventListener("click", function (e) {
     organisation5.classList.remove("active");
   }
 });
+var burger = document.querySelector(".nav-container");
+var navOverlay = document.querySelector('.nav-overlay');
+var navLink = document.getElementsByClassName('link-title');
+var menuState = "closed";
+burger.addEventListener("click", function () {
+  if (menuState == "closed") {
+    gsap.to(navOverlay, {
+      height: "100vh",
+      duration: 1,
+      ease: Power4.easeInOut
+    });
+    gsap.from(navLink, {
+      y: 200,
+      duration: 1,
+      stagger: 0.1
+    });
+    menuState = "opened";
+  } else if (menuState == "opened") {
+    gsap.to(navOverlay, {
+      height: "0vh",
+      duration: 1,
+      ease: Power4.easeInOut
+    });
+    gsap.from(navLink, {
+      y: 0,
+      duration: 1,
+      stagger: 0.1
+    });
+    menuState = "closed";
+  }
+});
+var main = document.querySelector(".main");
+var link = document.querySelector('.return-text');
+link.addEventListener("click", function (e) {
+  e.preventDefault();
+  var restartTarget = link.getAttribute("href");
+  var homePos = document.querySelector(restartTarget).offsetLeft;
+  gsap.to(window, {
+    scrollTo: homePos,
+    duration: 1.5,
+    ease: Power4.easeInOut
+  });
+});
+var sec1 = document.querySelector("#section1");
+var sec1Link = document.querySelector('.nav-sec1');
+sec1Link.addEventListener("click", function (e) {
+  e.preventDefault();
+  var sec1Target = sec1Link.getAttribute("href");
+  var sec1pos = document.querySelector(sec1Target).offsetLeft - document.querySelector(sec1Target).offsetLeft / 2;
+  gsap.to(window, {
+    scrollTo: sec1pos,
+    duration: 1.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(navOverlay, {
+    height: "0vh",
+    duration: 1,
+    ease: Power4.easeInOut
+  });
+  gsap.from(navLink, {
+    y: 0,
+    duration: 1,
+    stagger: 0.1
+  });
+  menuState = "closed";
+});
+var sec2 = document.querySelector("#section2");
+var sec2Link = document.querySelector('.nav-sec2');
+sec2Link.addEventListener("click", function (e) {
+  e.preventDefault();
+  var sec2Target = sec2Link.getAttribute("href");
+  var sec2pos = document.querySelector(sec2Target).offsetLeft - 5460;
+  gsap.to(window, {
+    scrollTo: sec2pos,
+    duration: 1.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(navOverlay, {
+    height: "0vh",
+    duration: 1,
+    ease: Power4.easeInOut
+  });
+  gsap.from(navLink, {
+    y: 0,
+    duration: 1,
+    stagger: 0.1
+  });
+  menuState = "closed";
+});
+var sec3 = document.querySelector("#section3");
+var sec3Link = document.querySelector('.nav-sec3');
+sec3Link.addEventListener("click", function (e) {
+  e.preventDefault();
+  var sec3Target = sec3Link.getAttribute("href");
+  var sec3pos = document.querySelector(sec3Target).offsetLeft - 11260;
+  gsap.to(window, {
+    scrollTo: sec3pos,
+    duration: 1.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(navOverlay, {
+    height: "0vh",
+    duration: 1,
+    ease: Power4.easeInOut
+  });
+  gsap.from(navLink, {
+    y: 0,
+    duration: 1,
+    stagger: 0.1
+  });
+  menuState = "closed";
+});
+var sec4 = document.querySelector("#section4");
+var sec4Link = document.querySelector('.nav-sec4');
+sec4Link.addEventListener("click", function (e) {
+  e.preventDefault();
+  var sec4Target = sec4Link.getAttribute("href");
+  var sec4pos = document.querySelector(sec4Target).offsetLeft - 18485;
+  gsap.to(window, {
+    scrollTo: sec4pos,
+    duration: 1.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(navOverlay, {
+    height: "0vh",
+    duration: 1,
+    ease: Power4.easeInOut
+  });
+  gsap.from(navLink, {
+    y: 0,
+    duration: 1,
+    stagger: 0.1
+  });
+  menuState = "closed";
+});
+var sec5 = document.querySelector("#section5");
+var sec5Link = document.querySelector('.nav-sec5');
+sec5Link.addEventListener("click", function (e) {
+  e.preventDefault();
+  var sec5Target = sec5Link.getAttribute("href");
+  var sec5pos = document.querySelector(sec5Target).offsetLeft - 22720;
+  gsap.to(window, {
+    scrollTo: sec5pos,
+    duration: 1.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(navOverlay, {
+    height: "0vh",
+    duration: 1,
+    ease: Power4.easeInOut
+  });
+  gsap.from(navLink, {
+    y: 0,
+    duration: 1,
+    stagger: 0.1
+  });
+  menuState = "closed";
+});
+console.log(sec2.offsetLeft);

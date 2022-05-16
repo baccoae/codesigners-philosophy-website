@@ -51,6 +51,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     scrollbar-width: none;
+    padding: 0 !important;
 }
 
 nav {
@@ -73,6 +74,7 @@ nav {
         gap: 8px;
         height: 60px;
         background-color: rgba(255, 255, 255, 0.3);
+        cursor: pointer;
 
         &-bar {
             width: 50%;
@@ -128,9 +130,77 @@ nav {
     }
 }
 
+.nav-overlay {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 0vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 999;
+
+    & .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 15%;
+        margin-top: 3%;
+        list-style: none;
+        transition: ease 0.2s;
+
+        & .nav-link {
+            display: flex;
+            position: relative;
+            text-transform: uppercase;
+            height: 105px;
+            overflow: hidden;
+            cursor: pointer;
+
+            & .nb {
+                font-family: @anonymousRegular;
+                color: @purple-primary;
+                font-size: 2em;
+                z-index: 1;
+                justify-self: flex-start;
+                pointer-events: none;
+            }
+
+            & span {
+                font-family: @fungisHeavy;
+                color: #ffffff;
+                font-size: 6em;
+                z-index: 2;
+                pointer-events: none;
+            }
+        }
+
+        &:hover > * {
+            opacity: 0.3;
+            transition: ease 0.2s;
+
+            &:hover {
+                opacity: 1;
+                transition: ease 0.2s;
+            }
+        }
+    }
+
+    .year {
+        font-family: @anonymousBold;
+        color: @purple-primary;
+        position: absolute;
+        bottom: 50px;
+        right: 7.5%;
+    }
+}
+
 main {
     overscroll-behavior: none;
-    // width: 4203.7%;
+    // width: 47744px;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
