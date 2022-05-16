@@ -130,7 +130,7 @@ nav {
 
 main {
     overscroll-behavior: none;
-    width: 4203.7%;
+    // width: 4203.7%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -1405,6 +1405,7 @@ p {
 }
 
 .infographic {
+    width: 100vw;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
@@ -1480,6 +1481,202 @@ p {
                 font-size: 4em;
                 height: 700px;
             }
+        }
+    }
+
+    & .col3 {
+        & .page {
+            display: flex;
+            flex-direction: row;
+            color: #8337ff;
+            position: absolute;
+            bottom: 125px;
+            left: 500px;
+
+            & .nb {
+                transform: rotate(0);
+                font-size: 9em;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            & span {
+                transform: rotate(-90deg);
+                font-size: 2em;
+                position: absolute;
+                right: -260px;
+                top: 50px;
+            }
+        }
+    }
+
+    & .middle {
+        & .people {
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+            position: absolute;
+            bottom: 165px;
+            left: 490px;
+
+            & .nb {
+                font-size: 40em;
+                line-height: 0;
+            }
+
+            & .line1 {
+                position: absolute;
+                font-size: 3em;
+                left: 350px;
+                bottom: -115px;
+            }
+
+            & .line2 {
+                position: absolute;
+                font-size: 3em;
+                left: 350px;
+                bottom: -165px;
+                width: 450px;
+            }
+        }
+    }
+
+    & .col4 {
+        color: @purple-primary;
+
+        & .words {
+            display: flex;
+            flex-direction: column;
+            transform: rotate(90deg);
+            position: absolute;
+            left: 740px;
+            top: 70px;
+
+            & span {
+                font-size: 3.7em;
+            }
+
+            & .nb {
+                font-size: 9em;
+                line-height: 0.7em;
+            }
+        }
+    }
+
+    .col5 {
+        color: #ffffff;
+
+        & .philosophers {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            position: absolute;
+            left: 1020px;
+            top: 70px;
+            width: 130px;
+
+            & span {
+                word-break: break-word;
+                font-size: 2em;
+                text-align: center;
+            }
+
+            & .nb {
+                font-size: 14em;
+            }
+        }
+    }
+
+    .col6 {
+        color: @purple-primary;
+
+        & .months {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 1150px;
+            top: 210px;
+
+            & .nb {
+                font-size: 11em;
+                line-height: 0.7em;
+            }
+
+            & .line {
+                display: flex;
+                flex-direction: row-reverse;
+
+                & span {
+                    font-size: 1.1em;
+                    text-align: center;
+                    width: 100px;
+                }
+
+                & .divider {
+                    background-color: @purple-primary;
+                    width: 20px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.go-back {
+    border: 0.5px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 200px;
+    width: 1000px;
+    height: 101vh;
+    margin-top: -2px;
+    border-radius: 1000px 0 0 1000px;
+
+    .return-text {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+
+        & span {
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: @fungisHeavy;
+            font-size: 3em;
+            text-decoration: underline;
+        }
+
+        & .graffiti {
+            color: @purple-primary;
+            font-family: @graffiti;
+            text-decoration: none;
+            position: absolute;
+            right: -40px;
+            bottom: 10px;
+            font-size: 5em;
+            transform: rotate(15deg);
+        }
+    }
+
+    & .face-shape {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+
+        & .last-statue {
+            justify-self: flex-end;
+            z-index: 2;
+        }
+
+        & .face-outlines {
+            z-index: 1;
+            position: absolute;
+            left: 280px;
+            bottom: -110px;
         }
     }
 }

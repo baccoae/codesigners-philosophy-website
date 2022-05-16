@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 let organisation1 = document.getElementById('one')
 let organisation2 = document.getElementById('two')

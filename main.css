@@ -101,7 +101,6 @@ nav .nav-author_text {
 }
 main {
   overscroll-behavior: none;
-  width: 4203.7%;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -1184,6 +1183,7 @@ p {
   bottom: 10px;
 }
 .infographic {
+  width: 100vw;
   margin-left: 100px;
   display: flex;
   flex-direction: row;
@@ -1248,4 +1248,168 @@ p {
 .infographic .col2 .code span {
   font-size: 4em;
   height: 700px;
+}
+.infographic .col3 .page {
+  display: flex;
+  flex-direction: row;
+  color: #8337ff;
+  position: absolute;
+  bottom: 125px;
+  left: 500px;
+}
+.infographic .col3 .page .nb {
+  transform: rotate(0);
+  font-size: 9em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.infographic .col3 .page span {
+  transform: rotate(-90deg);
+  font-size: 2em;
+  position: absolute;
+  right: -260px;
+  top: 50px;
+}
+.infographic .middle .people {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  position: absolute;
+  bottom: 165px;
+  left: 490px;
+}
+.infographic .middle .people .nb {
+  font-size: 40em;
+  line-height: 0;
+}
+.infographic .middle .people .line1 {
+  position: absolute;
+  font-size: 3em;
+  left: 350px;
+  bottom: -115px;
+}
+.infographic .middle .people .line2 {
+  position: absolute;
+  font-size: 3em;
+  left: 350px;
+  bottom: -165px;
+  width: 450px;
+}
+.infographic .col4 {
+  color: #8337ff;
+}
+.infographic .col4 .words {
+  display: flex;
+  flex-direction: column;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 740px;
+  top: 70px;
+}
+.infographic .col4 .words span {
+  font-size: 3.7em;
+}
+.infographic .col4 .words .nb {
+  font-size: 9em;
+  line-height: 0.7em;
+}
+.infographic .col5 {
+  color: #ffffff;
+}
+.infographic .col5 .philosophers {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: absolute;
+  left: 1020px;
+  top: 70px;
+  width: 130px;
+}
+.infographic .col5 .philosophers span {
+  word-break: break-word;
+  font-size: 2em;
+  text-align: center;
+}
+.infographic .col5 .philosophers .nb {
+  font-size: 14em;
+}
+.infographic .col6 {
+  color: #8337ff;
+}
+.infographic .col6 .months {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 1150px;
+  top: 210px;
+}
+.infographic .col6 .months .nb {
+  font-size: 11em;
+  line-height: 0.7em;
+}
+.infographic .col6 .months .line {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.infographic .col6 .months .line span {
+  font-size: 1.1em;
+  text-align: center;
+  width: 100px;
+}
+.infographic .col6 .months .line .divider {
+  background-color: #8337ff;
+  width: 20px;
+  height: 40px;
+  margin-right: 10px;
+}
+.go-back {
+  border: 0.5px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 200px;
+  width: 1000px;
+  height: 101vh;
+  margin-top: -2px;
+  border-radius: 1000px 0 0 1000px;
+}
+.go-back .return-text {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.go-back .return-text span {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Fungis Heavy";
+  font-size: 3em;
+  text-decoration: underline;
+}
+.go-back .return-text .graffiti {
+  color: #8337ff;
+  font-family: "Graffiti City";
+  text-decoration: none;
+  position: absolute;
+  right: -40px;
+  bottom: 10px;
+  font-size: 5em;
+  transform: rotate(15deg);
+}
+.go-back .face-shape {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.go-back .face-shape .last-statue {
+  justify-self: flex-end;
+  z-index: 2;
+}
+.go-back .face-shape .face-outlines {
+  z-index: 1;
+  position: absolute;
+  left: 280px;
+  bottom: -110px;
 }

@@ -1,6 +1,6 @@
 "use strict";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 var organisation1 = document.getElementById('one');
 var organisation2 = document.getElementById('two');
 var organisation3 = document.getElementById('three');
