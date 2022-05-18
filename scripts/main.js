@@ -239,6 +239,16 @@ navStart.addEventListener("click", (e) => {
         ease: Power4.easeInOut
     })
 
+    if (referenceState == "opened") {
+        gsap.to(referenceOverlay, {
+            bottom: "-80vh",
+            duration: 1,
+            ease: Power4.easeInOut
+        })
+
+        referenceState = "closed"
+    }
+
     if (menuState == "opened") {
         gsap.to(navOverlay, {
             height: "0vh",
@@ -278,6 +288,16 @@ navStart.addEventListener("click", (e) => {
 })
 
 burger.addEventListener("click", () => {
+    if (referenceState == "opened") {
+        gsap.to(referenceOverlay, {
+            bottom: "-80vh",
+            duration: 1,
+            ease: Power4.easeInOut
+        })
+
+        referenceState = "closed"
+    }
+
     if (menuState == "closed") {
         gsap.to(navOverlay, {
             height: "100vh",
