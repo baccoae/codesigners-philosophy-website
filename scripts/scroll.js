@@ -18,7 +18,7 @@ window.onload = function () {
         scrollTrigger: {
             trigger: ".main",
             pin: true,
-            scrub: true,
+            scrub: 1.3,
             end: "+=7500",
         }
     });

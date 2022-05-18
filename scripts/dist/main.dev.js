@@ -176,10 +176,55 @@ organisation5.addEventListener("click", function (e) {
     organisation5.classList.remove("active");
   }
 });
-var burger = document.querySelector(".nav-container");
+var burger = document.querySelector(".burger-container");
+var navStart = document.querySelector(".nav-title");
 var navOverlay = document.querySelector('.nav-overlay');
 var navLink = document.getElementsByClassName('link-title');
+var burgerBar1 = document.querySelector('.burger-container').firstElementChild;
+var burgerBar2 = document.querySelector('.burger-container').children[1];
+var burgerBar3 = document.querySelector('.burger-container').lastElementChild;
 var menuState = "closed";
+navStart.addEventListener("click", function (e) {
+  e.preventDefault();
+  var restartTarget = link.getAttribute("href");
+  var homePos = document.querySelector(restartTarget).offsetLeft;
+  gsap.to(window, {
+    scrollTo: homePos,
+    duration: 1.5,
+    ease: Power4.easeInOut
+  });
+
+  if (menuState == "opened") {
+    gsap.to(navOverlay, {
+      height: "0vh",
+      duration: 1,
+      ease: Power4.easeInOut
+    });
+    gsap.from(navLink, {
+      y: 0,
+      duration: 1,
+      stagger: 0.1
+    });
+    gsap.to(burgerBar1, {
+      y: 0,
+      rotation: 0,
+      duration: 0.5,
+      ease: Power4.easeInOut
+    });
+    gsap.to(burgerBar2, {
+      width: "50%",
+      duration: 0.5,
+      ease: Power4.easeInOut
+    });
+    gsap.to(burgerBar3, {
+      y: 0,
+      rotation: 0,
+      duration: 0.5,
+      ease: Power4.easeInOut
+    });
+    menuState = "closed";
+  }
+});
 burger.addEventListener("click", function () {
   if (menuState == "closed") {
     gsap.to(navOverlay, {
@@ -192,6 +237,23 @@ burger.addEventListener("click", function () {
       duration: 1,
       stagger: 0.1
     });
+    gsap.to(burgerBar1, {
+      y: 11,
+      rotation: 45,
+      duration: 0.5,
+      ease: Power4.easeInOut
+    });
+    gsap.to(burgerBar2, {
+      width: 0,
+      duration: 0.5,
+      ease: Power4.easeInOut
+    });
+    gsap.to(burgerBar3, {
+      y: -11,
+      rotation: -45,
+      duration: 0.5,
+      ease: Power4.easeInOut
+    });
     menuState = "opened";
   } else if (menuState == "opened") {
     gsap.to(navOverlay, {
@@ -203,6 +265,23 @@ burger.addEventListener("click", function () {
       y: 0,
       duration: 1,
       stagger: 0.1
+    });
+    gsap.to(burgerBar1, {
+      y: 0,
+      rotation: 0,
+      duration: 0.5,
+      ease: Power4.easeInOut
+    });
+    gsap.to(burgerBar2, {
+      width: "50%",
+      duration: 0.5,
+      ease: Power4.easeInOut
+    });
+    gsap.to(burgerBar3, {
+      y: 0,
+      rotation: 0,
+      duration: 0.5,
+      ease: Power4.easeInOut
     });
     menuState = "closed";
   }
@@ -240,6 +319,23 @@ sec1Link.addEventListener("click", function (e) {
     duration: 1,
     stagger: 0.1
   });
+  gsap.to(burgerBar1, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar2, {
+    width: "50%",
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar3, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
   menuState = "closed";
 });
 var sec2 = document.querySelector("#section2");
@@ -262,6 +358,23 @@ sec2Link.addEventListener("click", function (e) {
     y: 0,
     duration: 1,
     stagger: 0.1
+  });
+  gsap.to(burgerBar1, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar2, {
+    width: "50%",
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar3, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
   });
   menuState = "closed";
 });
@@ -286,6 +399,23 @@ sec3Link.addEventListener("click", function (e) {
     duration: 1,
     stagger: 0.1
   });
+  gsap.to(burgerBar1, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar2, {
+    width: "50%",
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar3, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
   menuState = "closed";
 });
 var sec4 = document.querySelector("#section4");
@@ -308,6 +438,23 @@ sec4Link.addEventListener("click", function (e) {
     y: 0,
     duration: 1,
     stagger: 0.1
+  });
+  gsap.to(burgerBar1, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar2, {
+    width: "50%",
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar3, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
   });
   menuState = "closed";
 });
@@ -332,5 +479,42 @@ sec5Link.addEventListener("click", function (e) {
     duration: 1,
     stagger: 0.1
   });
+  gsap.to(burgerBar1, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar2, {
+    width: "50%",
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
+  gsap.to(burgerBar3, {
+    y: 0,
+    rotation: 0,
+    duration: 0.5,
+    ease: Power4.easeInOut
+  });
   menuState = "closed";
+});
+var reference = document.querySelector('.references');
+var referenceOverlay = document.querySelector('.reference-overlay');
+var referenceState = "closed";
+reference.addEventListener("click", function () {
+  if (referenceState == "closed") {
+    gsap.to(referenceOverlay, {
+      bottom: "0",
+      duration: 1,
+      ease: Power4.easeInOut
+    });
+    referenceState = "opened";
+  } else if (referenceState == "opened") {
+    gsap.to(referenceOverlay, {
+      bottom: "-80vh",
+      duration: 1,
+      ease: Power4.easeInOut
+    });
+    referenceState = "closed";
+  }
 });

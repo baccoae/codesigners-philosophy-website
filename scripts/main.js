@@ -219,10 +219,63 @@ organisation5.addEventListener("click", (e) => {
     }
 })
 
-let burger = document.querySelector(".nav-container")
+let burger = document.querySelector(".burger-container")
+let navStart = document.querySelector(".nav-title")
 let navOverlay = document.querySelector('.nav-overlay')
 let navLink = document.getElementsByClassName('link-title')
+let burgerBar1 = document.querySelector('.burger-container').firstElementChild
+let burgerBar2 = document.querySelector('.burger-container').children[1]
+let burgerBar3 = document.querySelector('.burger-container').lastElementChild
 let menuState = "closed"
+
+navStart.addEventListener("click", (e) => {
+    e.preventDefault()
+    let restartTarget = link.getAttribute("href")
+    let homePos = document.querySelector(restartTarget).offsetLeft
+
+    gsap.to(window, {
+        scrollTo: (homePos),
+        duration: 1.5,
+        ease: Power4.easeInOut
+    })
+
+    if (menuState == "opened") {
+        gsap.to(navOverlay, {
+            height: "0vh",
+            duration: 1,
+            ease: Power4.easeInOut
+        })
+
+        gsap.from(navLink, {
+            y: 0,
+            duration: 1,
+            stagger: 0.1
+        })
+
+        gsap.to(burgerBar1, {
+            y: 0,
+            rotation: 0,
+            duration: 0.5,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(burgerBar2, {
+            width: "50%",
+            duration: 0.5,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(burgerBar3, {
+            y: 0,
+            rotation: 0,
+            duration: 0.5,
+            ease: Power4.easeInOut
+        })
+
+        menuState = "closed"
+    }
+
+})
 
 burger.addEventListener("click", () => {
     if (menuState == "closed") {
@@ -236,6 +289,26 @@ burger.addEventListener("click", () => {
             y: 200,
             duration: 1,
             stagger: 0.1
+        })
+
+        gsap.to(burgerBar1, {
+            y: 11,
+            rotation: 45,
+            duration: 0.5,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(burgerBar2, {
+            width: 0,
+            duration: 0.5,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(burgerBar3, {
+            y: -11,
+            rotation: -45,
+            duration: 0.5,
+            ease: Power4.easeInOut
         })
 
         menuState = "opened"
@@ -252,6 +325,26 @@ burger.addEventListener("click", () => {
             y: 0,
             duration: 1,
             stagger: 0.1
+        })
+
+        gsap.to(burgerBar1, {
+            y: 0,
+            rotation: 0,
+            duration: 0.5,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(burgerBar2, {
+            width: "50%",
+            duration: 0.5,
+            ease: Power4.easeInOut
+        })
+
+        gsap.to(burgerBar3, {
+            y: 0,
+            rotation: 0,
+            duration: 0.5,
+            ease: Power4.easeInOut
         })
 
         menuState = "closed"
@@ -298,6 +391,27 @@ sec1Link.addEventListener("click", (e) => {
         duration: 1,
         stagger: 0.1
     })
+
+    gsap.to(burgerBar1, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar2, {
+        width: "50%",
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar3, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
     menuState = "closed"
 })
 
@@ -324,6 +438,26 @@ sec2Link.addEventListener("click", (e) => {
         y: 0,
         duration: 1,
         stagger: 0.1
+    })
+
+    gsap.to(burgerBar1, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar2, {
+        width: "50%",
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar3, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
     })
 
     menuState = "closed"
@@ -354,6 +488,26 @@ sec3Link.addEventListener("click", (e) => {
         stagger: 0.1
     })
 
+    gsap.to(burgerBar1, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar2, {
+        width: "50%",
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar3, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
     menuState = "closed"
 })
 
@@ -380,6 +534,26 @@ sec4Link.addEventListener("click", (e) => {
         y: 0,
         duration: 1,
         stagger: 0.1
+    })
+
+    gsap.to(burgerBar1, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar2, {
+        width: "50%",
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar3, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
     })
 
     menuState = "closed"
@@ -410,5 +584,50 @@ sec5Link.addEventListener("click", (e) => {
         stagger: 0.1
     })
 
+    gsap.to(burgerBar1, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar2, {
+        width: "50%",
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
+    gsap.to(burgerBar3, {
+        y: 0,
+        rotation: 0,
+        duration: 0.5,
+        ease: Power4.easeInOut
+    })
+
     menuState = "closed"
+})
+
+let reference = document.querySelector('.references')
+let referenceOverlay = document.querySelector('.reference-overlay')
+let referenceState = "closed"
+
+reference.addEventListener("click", () => {
+    if (referenceState == "closed") {
+        gsap.to(referenceOverlay, {
+            bottom: "0",
+            duration: 1,
+            ease: Power4.easeInOut
+        })
+
+        referenceState = "opened"
+    }
+    else if (referenceState == "opened") {
+        gsap.to(referenceOverlay, {
+            bottom: "-80vh",
+            duration: 1,
+            ease: Power4.easeInOut
+        })
+
+        referenceState = "closed"
+    }
 })
