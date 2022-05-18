@@ -135,6 +135,7 @@ nav .nav-author-text {
   height: 105px;
   overflow: hidden;
   cursor: pointer;
+  transition: ease 0.2s;
 }
 .nav-overlay .nav-list .nav-link .nb {
   font-family: "Anonymous Regular";
@@ -143,6 +144,7 @@ nav .nav-author-text {
   z-index: 1;
   justify-self: flex-start;
   pointer-events: none;
+  transition: ease 0.2s;
 }
 .nav-overlay .nav-list .nav-link span {
   font-family: "Fungis Heavy";
@@ -150,6 +152,7 @@ nav .nav-author-text {
   font-size: 6em;
   z-index: 2;
   pointer-events: none;
+  transition: ease 0.2s;
 }
 .nav-overlay .nav-list:hover > * {
   opacity: 0.3;

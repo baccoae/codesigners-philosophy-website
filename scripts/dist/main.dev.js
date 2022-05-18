@@ -308,6 +308,16 @@ var main = document.querySelector(".main");
 var link = document.querySelector('.return-text');
 link.addEventListener("click", function (e) {
   e.preventDefault();
+
+  if (referenceState == "opened") {
+    gsap.to(referenceOverlay, {
+      bottom: "-80vh",
+      duration: 1,
+      ease: Power4.easeInOut
+    });
+    referenceState = "closed";
+  }
+
   var restartTarget = link.getAttribute("href");
   var homePos = document.querySelector(restartTarget).offsetLeft;
   gsap.to(window, {
