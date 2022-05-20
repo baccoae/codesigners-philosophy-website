@@ -37,7 +37,7 @@ window.onload = function () {
             // pin: true,
             scrub: true,
         },
-        scale: 60,
+        scale: 70,
         x: 400,
         duration: 3
     })
