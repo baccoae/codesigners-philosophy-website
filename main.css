@@ -212,11 +212,36 @@ nav .nav-author-text {
   flex-direction: column;
   padding: 75px 50px 0 50px;
 }
-.reference-overlay .reference-wrap .reference-container .title {
-  mix-blend-mode: color-dodge;
-  font-family: "Anonymous Regular";
-  color: #ffffff;
+.reference-overlay .reference-wrap .reference-container .ref-title {
+  font-family: "Anonymous Bold";
+  color: #1a1b1f;
   font-size: 1.5em;
+  margin-bottom: 75px;
+}
+.reference-overlay .reference-wrap .reference-container .ref-subtitle {
+  font-family: "Anonymous Bold";
+  color: #1a1b1f;
+  text-transform: none;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.reference-overlay .reference-wrap .reference-container .ref-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 40px;
+}
+.reference-overlay .reference-wrap .reference-container .ref-item .reference-name {
+  font-family: "Anonymous Regular";
+  font-size: 0.8em;
+  color: #1a1b1f;
+}
+.reference-overlay .reference-wrap .reference-container .ref-item .reference-link {
+  font-family: "Anonymous Regular";
+  font-size: 0.8em;
+  color: #1a1b1f;
+  word-break: break-all;
 }
 .reference-overlay .reference-wrap .reference-container .test {
   width: 100px;

@@ -251,11 +251,40 @@ nav {
             flex-direction: column;
             padding: 75px 50px 0 50px;
 
-            & .title {
-                mix-blend-mode: color-dodge;
-                font-family: @anonymousRegular;
-                color: #ffffff;
+            & .ref-title {
+                font-family: @anonymousBold;
+                color: @black;
                 font-size: 1.5em;
+                margin-bottom: 75px;
+            }
+
+            & .ref-subtitle {
+                font-family: @anonymousBold;
+                color: @black;
+                text-transform: none;
+                font-size: 1.2em;
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+
+            & .ref-item {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 40px;
+
+                & .reference-name {
+                    font-family: @anonymousRegular;
+                    font-size: 0.8em;
+                    color: @black;
+                }
+
+                & .reference-link {
+                    font-family: @anonymousRegular;
+                    font-size: 0.8em;
+                    color: @black;
+                    word-break: break-all;
+                }
             }
 
             & .test {
